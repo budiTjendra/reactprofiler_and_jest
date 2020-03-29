@@ -8,7 +8,6 @@ import * as api from "./utils/api";
 import "./style.css";
 
 function App() {
-    console.log('App')
     const [data, setData] = useState(undefined)
 
     const loadData = async () => {
@@ -23,7 +22,10 @@ function App() {
         return Object.keys(data).length
     })();
 
-    const Row = ({index, style}) => {
+    const Row = (props) => {
+        const {
+            index, style
+        } = props
         const colorName = data !== undefined ? Object.keys(data)[index] : undefined;
         const colorStyle = data !== undefined ?
             (() => {
@@ -38,7 +40,7 @@ function App() {
 
 
         return (
-            <div
+            <div role={"test"}
                 className={index % 2 ? "ListItemOdd" : "ListItemEven"}
                 style={colorStyle}
             >
@@ -49,26 +51,34 @@ function App() {
 
 
     const Example = () => (
-        <AutoSizer>
-            {({height, width}) => (
-                <List
-                    className="List"
-                    height={height}
-                    itemCount={dataSize}
-                    itemSize={35}
-                    width={width}
-                >
-                    {Row}
-                </List>
-            )}
-        </AutoSizer>
+        <>
+            {
+                data && (<div role="output" data-testid="output">data loaded!</div>)
+            }
+            <AutoSizer>
+                {({height, width}) => (
+                    <List
+                        className="List"
+                        height={height}
+                        itemCount={dataSize}
+                        itemSize={35}
+                        width={width}
+                    >
+                        {Row}
+                    </List>
+                )}
+            </AutoSizer>
+        </>
     );
 
 
     return (
-        <div className="App-fullscreen">
-            <button onClick={loadData}>show color</button>
+        <div className="App-fullscreen" >
+            <button data-testid="show-color-button" onClick={loadData}>show color</button>
+
             <Example/>
+
+
         </div>
     );
 }
