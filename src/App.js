@@ -1,6 +1,5 @@
-import React, {Profiler, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {unstable_trace as trace, unstable_wrap as wrap} from "scheduler/tracing";
 import {FixedSizeList as List} from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import * as api from "./utils/api";
@@ -40,7 +39,7 @@ function App() {
 
 
         return (
-            <div role={"test"}
+            <div
                 className={index % 2 ? "ListItemOdd" : "ListItemEven"}
                 style={colorStyle}
             >
@@ -50,27 +49,31 @@ function App() {
     }
 
 
-    const Example = () => (
-        <>
-            {
-                data && (<div role="output" data-testid="output">data loaded!</div>)
-            }
-            <AutoSizer>
-                {({height, width}) => (
-                    <List
-                        className="List"
-                        height={height}
-                        itemCount={dataSize}
-                        itemSize={35}
-                        width={width}
-                    >
-                        {Row}
-                    </List>
-                )}
-            </AutoSizer>
-        </>
-    );
+    const Example = () => {
+        return (
 
+            <>
+                {
+                    data && (<div role="output" data-testid="output">data loaded!</div>)
+                }
+                <AutoSizer>
+                    {({height, width}) => (
+                        <List
+                            role={'List'}
+                            className="List"
+                            height={height}
+                            itemCount={dataSize}
+                            itemSize={35}
+                            width={width}
+                        >
+                            {Row}
+                        </List>
+                    )}
+                </AutoSizer>
+            </>
+        );
+
+    }
 
     return (
         <div className="App-fullscreen" >
