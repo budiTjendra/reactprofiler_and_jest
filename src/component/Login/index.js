@@ -1,7 +1,7 @@
 // login.js
 import React from 'react'
 
-function Index() {
+function Login() {
     const [state, setState] = React.useReducer((s, a) => ({...s, ...a}), {
         resolved: false,
         loading: false,
@@ -56,4 +56,4 @@ function Index() {
     )
 }
 
-export default Index
+export default Login

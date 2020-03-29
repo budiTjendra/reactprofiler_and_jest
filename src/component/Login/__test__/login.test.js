@@ -4,7 +4,7 @@
 import '@testing-library/jest-dom'
 import React from 'react'
 import {render, fireEvent, screen} from '@testing-library/react'
-import Index from '../index'
+import Login from '../index'
 
 test('allows the user to login successfully', async () => {
     // mock out window.fetch for the test
@@ -15,7 +15,7 @@ test('allows the user to login successfully', async () => {
         })
     })
 
-    render(<Index />)
+    render(<Login />)
 
     // fill out the form
     fireEvent.change(screen.getByLabelText(/username/i), {
