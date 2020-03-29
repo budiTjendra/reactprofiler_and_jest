@@ -3,23 +3,17 @@ import './App.css';
 import {unstable_trace as trace, unstable_wrap as wrap} from "scheduler/tracing";
 import {FixedSizeList as List} from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
+import * as api from "./utils/api";
 
 import "./style.css";
 
 function App() {
+    console.log('App')
     const [data, setData] = useState(undefined)
 
-    const loadData = () => {
-        trace("load data", performance.now(), () => {
-            setTimeout(wrap(
-                async () => {
-                    const resp = await fetch('/color.json')
-                    const data = await resp.json()
-                    setData(data)
-                    console.log('load data')
-                }
-            ), 1000)
-        })
+    const loadData = async () => {
+        const colorData = await api.fetchData();
+        setData(colorData)
     };
 
     const dataSize = (() => {
