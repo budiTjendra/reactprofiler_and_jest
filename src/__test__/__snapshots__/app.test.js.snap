@@ -5,6 +5,7 @@ exports[`render correctly 1`] = `
   className="App-fullscreen"
 >
   <button
+    data-testid="show-color-button"
     onClick={[Function]}
   >
     show color
