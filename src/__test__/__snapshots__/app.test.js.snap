@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly 1`] = `
+<div
+  className="App-fullscreen"
+>
+  <button
+    onClick={[Function]}
+  >
+    show color
+  </button>
+  <div
+    style={
+      Object {
+        "height": 0,
+        "overflow": "visible",
+        "width": 0,
+      }
+    }
+  />
+</div>
+`;
