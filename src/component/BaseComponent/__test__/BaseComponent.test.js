@@ -1,7 +1,7 @@
 //https://github.com/testing-library/react-testing-library#basic-example
 import React from 'react'
-import * as BaseComponent from '../BaseComponent'
-import { render, fireEvent, waitFor, screen } from '@testing-library/react'
+import * as BaseComponent from '../Index'
+import { render, fireEvent, waitFor, screen} from '@testing-library/react'
 
 const {
     HelloworldComponent,
@@ -15,15 +15,23 @@ describe("Test HelloworldComponent", () => {
     })
 
 
-    test("test lookup by attribute",()=>{
+    test("lookup by attribute",()=>{
         const text = screen.getByTestId('helloworld-element')
         expect(text).toBeDefined()
     })
 
-    test("test lookup by text", () => {
+    test("lookup by text", () => {
         const text = screen.getByText('Helloworld')
         expect(text).toBeDefined()
 
+    })
+
+    //queryselector reference
+    //https://www.w3.org/TR/selectors-3/#attribute-substrings
+    test("lookup for className by queryselector", () => {
+        const { container } = render(<HelloworldComponent />)
+        const foo = container.querySelector('[class="basic simple"]')
+        expect(foo).toBeDefined()
     })
 })
 

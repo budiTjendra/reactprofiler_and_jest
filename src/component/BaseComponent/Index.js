@@ -1,6 +1,6 @@
 import React from 'react'
 export const HelloworldComponent = () => {
-    return (<div data-testid="helloworld-element" >Helloworld</div>)
+    return (<div data-testid="helloworld-element" className="basic simple">Helloworld</div>)
 }
 
 export const HiddenMessage = ({children}) => {
