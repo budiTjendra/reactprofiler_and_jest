@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1585480219108" clover="3.2.0">
-  <project timestamp="1585480219109" name="All files">
-    <metrics statements="91" coveredstatements="40" conditionals="52" coveredconditionals="11" methods="38" coveredmethods="18" elements="181" coveredelements="69" complexity="0" loc="91" ncloc="91" packages="4" files="7" classes="7"/>
+<coverage generated="1585579921516" clover="3.2.0">
+  <project timestamp="1585579921516" name="All files">
+    <metrics statements="114" coveredstatements="71" conditionals="58" coveredconditionals="23" methods="47" coveredmethods="29" elements="219" coveredelements="123" complexity="0" loc="114" ncloc="114" packages="6" files="11" classes="11"/>
     <package name="src">
-      <metrics statements="62" coveredstatements="12" conditionals="44" coveredconditionals="4" methods="23" coveredmethods="4"/>
+      <metrics statements="60" coveredstatements="19" conditionals="42" coveredconditionals="8" methods="23" coveredmethods="7"/>
       <file name="App.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/App.js">
-        <metrics statements="21" coveredstatements="12" conditionals="12" coveredconditionals="4" methods="7" coveredmethods="4"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <metrics statements="19" coveredstatements="19" conditionals="10" coveredconditionals="8" methods="7" coveredmethods="7"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="54" count="3" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="17" type="stmt"/>
+        <line num="28" count="17" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="17" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="17" type="stmt"/>
+        <line num="32" count="17" type="stmt"/>
+        <line num="35" count="17" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
       </file>
-      <file name="timerGame path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/timerGame.jse.js       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/index.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="8" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
@@ -89,7 +88,7 @@
     </package>
     <package name="src.component.Login">
       <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
-      <file name="timerGame path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/timerGame>
+      <file name="index.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/index.js">
         <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
         <line num="5" count="3" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
@@ -103,8 +102,51 @@
         <line num="38" count="3" type="stmt"/>
       </file>
     </package>
+    <package name="src.component.ManualMock">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="FileSummarizer.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/ManualMock/FileSummarizer.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.component.TimerMock">
+      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="4"/>
+      <file name="infiniteTimerGame.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/TimerMock/infiniteTimerGame.js">
+        <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="timerGame.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/TimerMock/timerGame.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.utils">
-      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+      <file name="TestUtils.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/utils/TestUtils.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="11" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="46" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+      </file>
       <file name="api.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/utils/api.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>

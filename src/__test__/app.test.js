@@ -24,10 +24,6 @@ test('render when button click', async ()=> {
 
     const mockFetchFn = jest.spyOn(window,'fetch').mockImplementationOnce(()=>{
         console.log('calling mock')
-
-        //hack to execute mockOffsetSize inside component itself.
-        //mockOffsetSize(1000, 1000);
-
         return Promise.resolve({
             json: () => Promise.resolve(dataColor)
         })
@@ -43,7 +39,6 @@ test('render when button click', async ()=> {
     expect(output).toBeDefined()
 
 })
-
 
 
 

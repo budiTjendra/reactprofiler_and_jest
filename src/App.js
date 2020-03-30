@@ -28,21 +28,14 @@ function App() {
         const colorName = data !== undefined ? Object.keys(data)[index] : undefined;
         const colorStyle = data !== undefined ?
             (() => {
-                if (index >= dataSize) {
-                    return style;
-                }
-
                 const rgbVal = Object.values(data)[index]
                 return ({backgroundColor: `rgba(${rgbVal[0]},${rgbVal[1]},${rgbVal[2]},${rgbVal[3]})`, ...style})
                 //return (style)
             })() : style;
-
-
         return (
             <div
                 className={index % 2 ? "ListItemOdd" : "ListItemEven"}
-                style={colorStyle}
-            >
+                style={colorStyle}>
                 {colorName}
             </div>
         );
