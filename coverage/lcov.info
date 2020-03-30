@@ -55,8 +55,7 @@ BRF:12
 BRH:4
 end_of_record
 TN:
-SF:/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/index.js
-FNF:0
+SF:/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/timerGameGame.js:0
 FNH:0
 DA:8,0
 DA:16,0
@@ -201,8 +200,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/index.js
-FN:4,Login
+SF:/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/indexFN:4,Login
 FN:5,(anonymous_1)
 FN:11,handleSubmit
 FN:26,(anonymous_3)

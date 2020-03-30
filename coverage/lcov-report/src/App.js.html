@@ -14,41 +14,41 @@
         }
     </style>
 </head>
-    
+
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> App.js</h1>
+        <h1><a href="../timerGame.html">All files</a> / <a href="timerGame.html">src</a> App.js</h1>
         <div class='clearfix'>
-            
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">57.14% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>12/21</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
                 <span class='fraction'>4/12</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">57.14% </span>
                 <span class="quiet">Functions</span>
                 <span class='fraction'>4/7</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">57.14% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>12/21</span>
             </div>
-        
-            
+
+
         </div>
         <p class="quiet">
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
@@ -254,16 +254,16 @@ function App() {
 &nbsp;
     const Row = <span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; {
         const {
-            index, style
+            timerGame, style
         } = <span class="cstat-no" title="statement not covered" >props</span>
-        const colorName = <span class="cstat-no" title="statement not covered" >data !== undefined ? Object.keys(data)[index] : undefined;</span>
+        const colorName = <span class="cstat-no" title="statement not covered" >data !== undefined ? Object.keys(data)[timerGame] : undefined;</span>
         const colorStyle = <span class="cstat-no" title="statement not covered" >data !== undefined ?</span>
             (<span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >                if (index &gt;= dataSize) {</span>
+<span class="cstat-no" title="statement not covered" >                if (timerGame &gt;= dataSize) {</span>
 <span class="cstat-no" title="statement not covered" >                    return style;</span>
                 }
 &nbsp;
-                const rgbVal = <span class="cstat-no" title="statement not covered" >Object.values(data)[index]</span>
+                const rgbVal = <span class="cstat-no" title="statement not covered" >Object.values(data)[timerGame]</span>
 <span class="cstat-no" title="statement not covered" >                return ({backgroundColor: `rgba(${rgbVal[0]},${rgbVal[1]},${rgbVal[2]},${rgbVal[3]})`, ...style})</span>
                 //return (style)
             })() : style;
@@ -271,7 +271,7 @@ function App() {
 &nbsp;
 <span class="cstat-no" title="statement not covered" >        return (</span>
             &lt;div role={"test"}
-                className={index % 2 ? "ListItemOdd" : "ListItemEven"}
+                className={timerGame % 2 ? "ListItemOdd" : "ListItemEven"}
                 style={colorStyle}
             &gt;
                 {colorName}
@@ -334,4 +334,3 @@ export default App;
         <script src="../block-navigation.js"></script>
     </body>
 </html>
-    

@@ -28,8 +28,7 @@
         <line num="60" count="0" type="stmt"/>
         <line num="75" count="3" type="stmt"/>
       </file>
-      <file name="index.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/index.js">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="timerGame path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/timerGame.jse.js       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="8" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
@@ -90,7 +89,7 @@
     </package>
     <package name="src.component.Login">
       <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
-      <file name="index.js" path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/index.js">
+      <file name="timerGame path="/Users/budi.injo/Documents/work/TL/github/reactprofiler/src/component/Login/timerGame>
         <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
         <line num="5" count="3" type="stmt"/>
         <line num="12" count="1" type="stmt"/>

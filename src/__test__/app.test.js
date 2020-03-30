@@ -1,7 +1,8 @@
-import * as React from 'react';
+import React, { useState as useStateMock } from "react";
 import renderer from 'react-test-renderer';
 import App from '../App';
 import { render, fireEvent, waitForElement } from '@testing-library/react'
+import * as jestUtils from '../utils/jestUtils'
 
 // AutoSizer uses offsetWidth and offsetHeight.
 // Jest runs in JSDom which doesn't support measurements APIs.
@@ -16,26 +17,25 @@ function mockOffsetSize(width, height) {
     });
 }
 
-test('render correctly', () =>{
-    const dataColor = require('../../public/color')
+test('render correctly',async () =>{
+    jest.mock("react", () => ({
+        ...jest.requireActual("react"),
+        useState: jest.fn()
+    }));
 
-    jest.spyOn(React, 'useState').mockImplementation((initState)=> {
-        //hack to execute mockOffsetSize inside component itself.
-        mockOffsetSize(1000, 1000);
+// And before rendering (omitting var declarations for brevity)
+    useStateMock.mockImplementation(initState => [initState, jest.fn()]);
+    //  const {container , findByRole} = render(<App/>)
+   // const output = await waitForElement(()=> container.querySelector('[class="List"]'))
 
-        return [dataColor, jest.fn()]
-    });
-   // const {container , findByRole} = render(<App/>)
+   // expect(output).toBeDefined()
 
 
     const tree = renderer
         .create(<App/>)
         .toJSON();
     expect(tree).toMatchSnapshot();
-
-
-
-
+   // expect(mockFn).toHaveBeenCalledTimes(1)
 })
 
 
